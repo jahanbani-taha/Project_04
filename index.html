@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" dir="rtl">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -8,40 +7,387 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/-Fixed-Navbar-start-with-transparency-background-BS4--transparency-menu.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/css/uikit.min.css" />
 </head>
-
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+
+        });
+    </script>
     <div>
         <header>
-            <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-light transparency border-bottom border-light" id="transmenu">
-                <div class="container"><a class="navbar-brand text-success" href="#header">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" style="width: 180px;" viewBox="0 0 268.6 34.2"><title>DSI Dantech</title><path d="M16.4 30.3c-7.9-2-13.5-7.2-13.5-13.2S8.5 5.9 16.4 3.9a15.94 15.94 0 013-.6l3-.3v31.2h3a15.26 15.26 0 003-.3c1-.1 2-.3 3-.5a26.05 26.05 0 009.2-4c4.6-3.2 7.2-7.6 7.2-12.3s-2.6-9-7.2-12.3a26.05 26.05 0 00-9.2-4c-1-.2-2-.4-3-.5v27.69a17.1 17.1 0 003-.9V3.9c7.9 2 13.5 7.2 13.5 13.2s-5.6 11.2-13.5 13.2a15.94 15.94 0 01-3 .6l-3 .3V-.01h-3a15.26 15.26 0 00-3 .3c-1 .1-2 .3-3 .5a26.05 26.05 0 00-9.2 4C2.6 7.99-.02 12.4-.02 17.1s2.6 9 7.2 12.3a26.05 26.05 0 009.2 4c1 .2 2 .4 3 .5V6.2a17.1 17.1 0 00-3 .9zM251.9 24.09h2.9v-6.1h10.9v6.1h2.9v-13.9h-2.9v5.6h-10.9v-5.6h-2.9zm-14 .2c5.7 0 7.9-2.9 7.9-5.6v-.2h-2.6v.1c0 1.8-1.7 3.4-5.2 3.4-4.1 0-5.7-2.4-5.7-4.9 0-2.9 2-5 5.7-5s5.2 2 5.2 3.4v.1h2.6v-.2c0-2.3-2-5.5-8-5.5-5.6 0-8.5 3.3-8.5 7.3-.1 3.5 2.1 7.1 8.6 7.1m-26.7-.2h13.2v-2.3h-10.2v-3.8h7.9v-1.9h-7.9v-3.6h10v-2.3h-12.9zm-14.6 0h2.9v-11.6h6v-2.3h-14.9v2.3h6zm-28.3 0h2.8v-11.4l10.88 11.4h2.9v-13.9h-2.8v10l-9.6-10h-4.1zm-19.3-5l3.7-6.6 3.7 6.6zm10.2 5h3.4l-8-13.9h-3.4l-8.1 13.9h3.1l1.7-3.1h9.6zm-32.7-2.3v-9.3h4c4.3 0 5.6 2.1 5.6 4.7 0 3.1-1.5 4.7-5.2 4.7h-4.4zm-2.9 2.3h7.38c5.8 0 8-2.5 8-7 0-3.7-2-7-8.6-7h-6.8zm-19.9 0h2.9v-13.9h-2.9zm-14.4.2c7 0 8.2-2.5 8.2-4.7a3 3 0 00-2.1-2.9 23.22 23.22 0 00-5.2-.7 26.07 26.07 0 01-4.8-.5 1.12 1.12 0 01-1-1.2c0-1.3 1.5-2.2 4.9-2.2 3.7 0 4.9 1 4.9 2.6h2.6c0-2.5-1.2-4.8-7.6-4.8-5.4 0-7.8 2.1-7.8 4.6a2.84 2.84 0 001.7 2.8 15.67 15.67 0 005.2.8 40.45 40.45 0 014.9.4c.9.2 1.3.7 1.3 1.4 0 1.2-.8 2.2-5.3 2.2s-5.1-1.4-5.1-2.7h-2.6c.1 1.8.8 4.9 7.8 4.9m-26-2.5v-9.3h4c4.3 0 5.6 2.1 5.6 4.7 0 3.1-1.5 4.7-5.2 4.7zm-2.9 2.3h7.4c5.8 0 8-2.5 8-7 0-3.7-2-7-8.6-7h-6.8z"></path></svg></a><button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1"><span></span><span></span><span></span></button>
+            <!-- menu started -->
+            <nav class="navbar navbar-dark navbar-expand-lg fixed-top transparency" id="transmenu" style="background-color: rgba(0, 0, 0, .65);" dir="ltr">
+                <div class="container"><a class="navbar-brand" href="#header">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" style="margin-bottom: 5px;" width="30" height="30" fill="currentColor" class="bi bi-badge-vr" viewBox="0 0 16 16">
+                    <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+                    <path d="M4.508 11h1.429l1.99-5.999H6.61L5.277 9.708H5.22L3.875 5.001H2.5zm6.387-5.999H8.5V11h1.173V8.763h1.064L11.787 11h1.327L11.91 8.583C12.455 8.373 13 7.779 13 6.9c0-1.147-.773-1.9-2.105-1.9zm-1.222 2.87V5.933h1.05c.63 0 1.05.347 1.05.989 0 .633-.408.95-1.067.95z"/>
+                  </svg> VALERIA</a><button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1"><span></span><span></span><span></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#">First Item</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Second Item</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Third Item</a></li>
-                            <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#">Dropdown </a>
-                                <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                            <li class="nav-item"><a class="nav-link" href="#" style="color: white;">صنایع</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">محصولات</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">درباره ما</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">اخبار</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">حرفه ما</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">خدمات</a></li>
+                            <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#"style="color: white;" dir="ltr">Pr</a>
+                                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, .65);"><a class="dropdown-item" href="#"style="color: white; ">En</a></div>
+                            </li>
+                            <li class="nav-item" class="nav-link">
+                                <a href=""><button type="button" class="btn btn-outline-light" style="width: 110px; background-color: transparent;">ارتباط با ما</button></a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-            <div class="bg-success d-flex align-items-center" style="height:100vh;">
-                <div class="text-center w-100 text-white">
-                    <h1>Lorem Ipsum</h1>
-                    <h2 class="font-weight-normal"><em>Asbolius praefectum Sericus</em></h2>
-                </div>
+            <!-- menu ended -->
+            <!-- header started -->
+            <div class=" d-flex align-items-center" style="height:100vh;">
+                <img src="Images/video-still-picture.webp" alt="" style="height: 100vh; width: 100%;">
             </div>
+            <!-- header ended -->
         </header>
         <section class="py-5">
-            <div class="container bg-primary" style="height: 200vh;">
+            <!-- container started -->
+            <div class="container-fluid" style="height: 100vh;margin-top: -48px;">
+                <div class="row h-100">
+                    <!-- section 1 for desktop -->
+                    <div class="col-12 d-none d-lg-block" style="height: 93vh; background-color: rgba(212,213,207); color: rgb(114, 117, 99);">
+                        <div class="row h-100">
+                            <div class="col-7">
+                                <div class="row h-25" style="display: flex; text-align: start; justify-content: center; margin-top: 230px;">
+                                    <p style="font-size: 50px;">انجماد، سرمایش و گرمایش <br>
+                                        <strong>غذای</strong>
+                                        <strong>تازه</strong>
+                                    </p>
+                                </div>
+                                <div class="row h-25" style="display: flex; text-align: start; justify-content: center;">
+                                    <p>ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
+                                    و گرم کردن<br> مواد غذایی با کیفیت. <br> <br><br>بیشتربخوانید
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="row h-100" style="align-items: end; display: flex; justify-content: end;" data-aos="fade-down-left">
+                                    <img src="Images/meat-poultry.png" alt="" style="height: 700px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of desktop -->
+                    <!-- section 1 for tablet -->
+                    <div class="col-12 d-none d-md-block d-lg-none" style="height: 50vh; background-color: rgba(212,213,207); color: rgb(114, 117, 99);">
+                        <div class="row h-100">
+                            <div class="col-12">
+                                <div class="row" style="display: flex; text-align: start; justify-content: center; height: 180px; margin-top: 50px;">
+                                    <p style="font-size: 50px;">انجماد، سرمایش و گرمایش <br>
+                                        <strong>غذای</strong>
+                                        <strong>تازه</strong>
+                                    </p>
+                                </div>
+                                <div class="row h-25" style="display: flex; text-align: start; justify-content: center;">
+                                    <p>ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
+                                    و گرم کردن<br> مواد غذایی با کیفیت. <br><br>بیشتربخوانید
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of tablet -->
+                    <!-- section 1 for mobile -->
+                    <div class="col-12 d-block d-md-none" style="height: 50vh; background-color: rgba(212,213,207); color: rgb(114, 117, 99);">
+                        <div class="row h-100">
+                            <div class="col-12">
+                                <div class="row" style="display: flex; text-align: start; justify-content: center; height: 180px; margin-top: 30px;">
+                                    <p style="font-size: 45px;">انجماد، سرمایش و گرمایش <br>
+                                        <strong>غذای</strong>
+                                        <strong>تازه</strong>
+                                    </p>
+                                </div>
+                                <div class="row h-25" style="display: flex; text-align: start; justify-content: center; margin-top: 5px;">
+                                    <p>ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
+                                    و گرم کردن<br> مواد غذایی با کیفیت. <br><br>بیشتربخوانید
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of mobile -->
+                    <!-- section2 for desktop -->
+                    <div class="col-12 d-none d-lg-block" style="height: 140vh;">
+                        <div class="row h-100">
+                            <div class="col-12" style="height: 60vh; background-color: rgb(0, 59, 94); text-align: start; text-align: start;">
+                                <div class="row h-50"><h3 style="margin-top: 200px; margin-right: 300px; color: whitesmoke;">راه حل</h3></div>
+                                <div class="row h-50">
+                                    <p style="margin-right: 300px;"><h2 style="color: whitesmoke;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم<br>که به نفع محیط زیست و <br>بودجه شماست</h2></p>
+                                </div>
+                            </div>
+                            <div class="col-12" style="height: 80vh;">
+                                <div class="row h-75">
+                                    <div uk-slider >
+
+                                        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light" style="height: 496px;">
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/cryo-spiral.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel" style="display: flex;"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">IQF Mechanical</h1></a></li></ul></div>
+                                            </div>
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/h.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">Plate Freezing</h1></a></li></ul></div>
+                                            </div>
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/spiral-mekanisk.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">IQF / Cryogenic</h1></a></li></ul></div>
+                                            </div>
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/spiral-tunnel-og-plade.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">Combined solutions</h1></a></li></ul></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                                    
+                                </div>
+                                <div class="row h-25" style="background-color: rgb(0, 59, 94);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of desktop -->
+                    <!-- section 2 for tablet -->
+                    <div class="col-12 d-none d-md-block d-lg-none" style="height: 140vh;">
+                        <div class="row h-100">
+                            <div class="col-12" style="height: 60vh; background-color: rgb(0, 59, 94); text-align: start; text-align: start;">
+                                <div class="row h-50"><h3 style="margin-top: 200px; margin-right: 150px; color: whitesmoke;">راه حل</h3></div>
+                                <div class="row h-50">
+                                    <p style="margin-right: 150px;"><h2 style="color: whitesmoke;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم<br>که به نفع محیط زیست و <br>بودجه شماست</h2></p>
+                                </div>
+                            </div>
+                            <div class="col-12" style="height: 80vh;">
+                                <div class="row h-75">
+                                    <div uk-slider >
+
+                                        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light" style="height: 496px;">
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/cryo-spiral.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel" style="display: flex;"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">IQF Mechanical</h1></a></li></ul></div>
+                                            </div>
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/h.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">Plate Freezing</h1></a></li></ul></div>
+                                            </div>
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/spiral-mekanisk.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">IQF / Cryogenic</h1></a></li></ul></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                                    
+                                </div>
+                                <div class="row h-25" style="background-color: rgb(0, 59, 94);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of tablet -->
+                    <!-- section 2 for mobile -->
+                    <div class="col-12 d-block d-md-none" style="height: 140vh;">
+                        <div class="row h-100">
+                            <div class="col-12" style="height: 60vh; background-color: rgb(0, 59, 94); text-align: start; text-align: start;">
+                                <div class="row h-50"><h3 style="margin-top: 200px; margin-right: 50px; color: whitesmoke;">راه حل</h3></div>
+                                <div class="row h-50">
+                                    <p style="margin-right: 50px;"><h2 style="color: whitesmoke;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم<br>که به نفع محیط زیست و <br>بودجه شماست</h2></p>
+                                </div>
+                            </div>
+                            <div class="col-12" style="height: 80vh;">
+                                <div class="row h-75">
+                                    <div uk-slider >
+
+                                        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light" style="height: 496px;">
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/cryo-spiral.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel" style="display: flex;"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">IQF Mechanical</h1></a></li></ul></div>
+                                            </div>
+                                            <div class="uk-transition-toggle" tabindex="0">
+                                                <img src="Images/h.webp" alt="" style="height: 494px; width: 100%;">
+                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">Plate Freezing</h1></a></li></ul></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                                    
+                                </div>
+                                <div class="row h-25" style="background-color: rgb(0, 59, 94);"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of mobile -->
+                    <!-- section 3 for desktop -->
+                    <div class="col-12 d-none d-lg-block" style="height: 105vh; background-color: rgb(217, 217, 214);">
+                        <div class="row h-75" style="margin-top: 50px;">
+                            <div class="col-12">
+                                <div class="row h-50">
+                                    <div class="col-12">
+                                        <div class="row h-50" style="display: flex; justify-content: center;  background-color: rgb(217, 217, 214);">
+                                            <h3 style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h3>
+                                        </div>
+                                        <div class="row h-50" style="display: flex; justify-content: center; text-align: center;  background-color: rgb(217, 217, 214);">
+                                            <p style="font-size: 30px; color: rgb(114, 117, 99); margin-top: 40px;"><strong>عضو</strong> خبرنامه ما مشترک شوید و <strong>آخرین</strong><br> <strong>اخبار</strong> را دریافت کنید</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row h-50 bg-info">
+                                    <div class="col-12">
+                                        <div class="row h-50" dir="ltr">
+                                            <div class="col-6"  style=" background-color: rgb(217, 217, 214);">
+                                                <div class="row h-100" style="display: flex; align-items: center;">
+                                                    <div class="col-12" style="margin-left: 160px;">
+                                                        <input type="text" class="form-control" placeholder="نام" aria-label="نام" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6" style=" background-color: rgb(217, 217, 214);">
+                                                <div class="row h-100" style="display: flex; align-items: center;">
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" placeholder="ایمیل" aria-label="ایمیل" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row h-25" style=" background-color: rgb(217, 217, 214);">
+                                            <div class="form-check" style="display: flex; text-align: center; align-items: center; margin: 0 auto;">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                                <label class="form-check-label" for="flexCheckIndeterminate" style=" margin-right: 20px;">
+                                                    بله، من مایلم از VALERIA خبرنامه دریافت کنم. سیاست حفظ حریم خصوصی ما را بخوانید
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row h-25" style="display: flex; align-items: center; justify-content: center; background-color: rgb(217, 217, 214);">
+                                            <button type="button" class="btn" style="height: 60px; width: 180px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px;"><strong>دنبال کردن</strong></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of desktop -->
+                    <!-- section 3 for tablet -->
+                    <div class="col-12 d-none d-md-block d-lg-none" style="height: 80vh; background-color: rgb(217, 217, 214);">
+                        <div class="row h-75" style="margin-top: 50px;">
+                            <div class="col-12">
+                                <div class="row h-50">
+                                    <div class="col-12">
+                                        <div class="row h-50" style="display: flex; justify-content: center;  background-color: rgb(217, 217, 214);">
+                                            <h3 style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h3>
+                                        </div>
+                                        <div class="row h-50" style="display: flex; justify-content: center; text-align: center;  background-color: rgb(217, 217, 214);">
+                                            <p style="font-size: 30px; color: rgb(114, 117, 99); margin-top: 10px;"><strong>عضو</strong> خبرنامه ما مشترک شوید و <strong>آخرین</strong><br> <strong>اخبار</strong> را دریافت کنید</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row h-50 bg-info">
+                                    <div class="col-12">
+                                        <div class="row h-50" dir="rtl">
+                                            <div class="col-12"  style=" background-color: rgb(217, 217, 214);">
+                                                <div class="row h-100" style="display: flex; align-items: center;">
+                                                    <div class="col-12" style="align-items: center; display: flex; justify-content: center;">
+                                                        <input type="text" class="form-control" placeholder="نام" aria-label="نام" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" style=" background-color: rgb(217, 217, 214);">
+                                                <div class="row h-100" style="display: flex; align-items: center;">
+                                                    <div class="col-12" style="align-items: center; display: flex; justify-content: center;">
+                                                        <input type="text" class="form-control" placeholder="ایمیل" aria-label="ایمیل" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row h-25" style=" background-color: rgb(217, 217, 214);">
+                                            <div class="form-check" style="display: flex; text-align: center; align-items: center; margin: 0 auto;">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                                <label class="form-check-label" for="flexCheckIndeterminate" style="margin-right: 20px;">
+                                                    بله، من مایلم از VALERIA خبرنامه دریافت کنم. سیاست حفظ حریم خصوصی ما را بخوانید
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row h-25" style="display: flex; align-items: center; justify-content: center; background-color: rgb(217, 217, 214);">
+                                            <button type="button" class="btn" style="height: 60px; width: 180px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px;"><strong>دنبال کردن</strong></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of tablet -->
+                    <!-- section 3 for mobile -->
+                    <div class="col-12 d-block d-md-none" style="height: 80vh; background-color: rgb(217, 217, 214);">
+                        <div class="row h-75" style="margin-top: 50px;">
+                            <div class="col-12">
+                                <div class="row h-50">
+                                    <div class="col-12">
+                                        <div class="row h-50" style="display: flex; justify-content: center;  background-color: rgb(217, 217, 214);">
+                                            <h4 style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h4>
+                                        </div>
+                                        <div class="row h-50" style="display: flex; justify-content: center; text-align: center;  background-color: rgb(217, 217, 214);">
+                                            <p style="font-size: 25px; color: rgb(114, 117, 99); margin-top: 20px;"><strong>عضو</strong> خبرنامه ما مشترک شوید و <strong>آخرین</strong><br> <strong>اخبار</strong> را دریافت کنید</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row h-50" style="background-color: rgb(217, 217, 214);">
+                                    <div class="col-12">
+                                        <div class="row h-50" dir="rtl">
+                                            <div class="col-12"  style=" background-color: rgb(217, 217, 214);">
+                                                <div class="row h-100" style="display: flex; align-items: center;">
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" placeholder="نام" aria-label="نام" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" style=" background-color: rgb(217, 217, 214);">
+                                                <div class="row h-100" style="display: flex; align-items: center;">
+                                                    <div class="col-12">
+                                                        <input type="text" class="form-control" placeholder="ایمیل" aria-label="ایمیل" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px;">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row h-25" style=" background-color: rgb(217, 217, 214);">
+                                            <div class="form-check" style=" display: flex; text-align: start; margin-top: 15px;">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                                <label class="form-check-label" for="flexCheckIndeterminate" style="margin-right: 20px; font-size: 12px;">
+                                                    بله، من مایلم از VALERIA خبرنامه دریافت کنم. سیاست حفظ حریم خصوصی ما را بخوانید
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row h-25" style=" background-color: rgb(217, 217, 214);">
+                                            <button type="button" class="btn" style="height: 60px; width: 180px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px;"><strong>دنبال کردن</strong></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end of mobile -->
+                </div>
+
+                </div>
+            </div>
+            <!-- container ended -->
             </div>
         </section>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Fixed-Navbar-start-with-transparency-background-BS4--transparency-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit-icons.min.js"></script>
 </body>
 
 </html>
