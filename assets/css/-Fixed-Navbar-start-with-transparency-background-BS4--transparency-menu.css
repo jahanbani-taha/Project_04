@@ -184,4 +184,84 @@ button {
  button:hover .button-text {
   color: #fff;
  }
+ @font-face {
+  font-family: bnazanin;
+  src: url(BNazanin.woff);
+  }
+ p{
+  font-family: bnazanin;
+ }
+ h1{
+  font-family: bnazanin;
+ }
+ h2{
+  font-family: bnazanin;
+ }
+ h3{
+  font-family: bnazanin;
+ }
+ h4{
+  font-family: bnazanin;
+ }
+ h5{
+  font-family: bnazanin;
+ }
+ul{
+  font-family: bnazanin;
+}
+li{
+  font-family: bnazanin;
+}
+a{
+  font-family: bnazanin;
+}
 
+
+.accordian {
+  width: 1690px;
+  height: 60vh;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.accordian ul {
+  width:100%;
+}
+
+.accordian li {
+  position: relative;
+  display: block;
+  width: 395px;
+  height: 60vh;
+  float: left;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.accordian ul:hover li {
+  width: 345px;
+}
+
+.accordian ul li:hover {
+  width: 520px;
+}
+
+.accordian li img {
+  display: block;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.image_title {
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 520px;
+  height: 60px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}

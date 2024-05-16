@@ -15,7 +15,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
-
+        once:true
         });
     </script>
     <div>
@@ -28,17 +28,21 @@
                   </svg> VALERIA</a><button data-toggle="collapse" class="navbar-toggler collapsed" data-target="#navcol-1"><span></span><span></span><span></span></button>
                     <div class="collapse navbar-collapse" id="navcol-1">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item"><a class="nav-link" href="#" style="color: white;">صنایع</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">محصولات</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">درباره ما</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">اخبار</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">حرفه ما</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#"style="color: white;">خدمات</a></li>
-                            <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown" href="#"style="color: white;" dir="ltr">Pr</a>
-                                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, .65);"><a class="dropdown-item" href="#"style="color: white; ">En</a></div>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" id="m1" href="#" style="color: white;">صنایع</a></li>
+                            <li class="nav-item"><a class="nav-link" id="m2" href="#"style="color: white;">محصولات</a></li>
+                            <li class="nav-item"><a class="nav-link" id="m3" href="#"style="color: white;">درباره ما</a></li>
+                            <li class="nav-item"><a class="nav-link" id="m4" href="#"style="color: white;">اخبار</a></li>
+                            <li class="nav-item"><a class="nav-link" id="m5" href="#"style="color: white;">حرفه ما</a></li>
+                            <li class="nav-item"><a class="nav-link" id="m6" href="#"style="color: white;">خدمات</a></li>
+
+                            <li class="nav-item"><a class="nav-link reload" href="#en"style="color: white;">En</a></li>
+                            <li class="nav-item"><a class="nav-link reload" href="#fa"style="color: white;">Fa</a></li>
+
+                            <!-- <li class="dropdown nav-item"><a class="dropdown-toggle nav-link" data-toggle="dropdown" href="#"style="color: white;" dir="ltr">زبان</a>
+                                <div class="dropdown-menu" style="background-color: rgba(0, 0, 0, .65); margin-top: 15px;"><a class="dropdown-item" href="#"style="color: white; ">En</a></div>
+                            </li> -->
                             <li class="nav-item" class="nav-link">
-                                <a href=""><button type="button" class="btn btn-outline-light" style="width: 110px; background-color: transparent;">ارتباط با ما</button></a>
+                                <a href=""><button type="button" class="btn btn-outline-light" id="m7" style="width: 110px; background-color: transparent;">ارتباط با ما</button></a>
                             </li>
                         </ul>
                     </div>
@@ -60,13 +64,13 @@
                         <div class="row h-100">
                             <div class="col-7">
                                 <div class="row h-25" style="display: flex; text-align: start; justify-content: center; margin-top: 230px;">
-                                    <p style="font-size: 50px;">انجماد، سرمایش و گرمایش <br>
+                                    <p style="font-size: 50px; font-family: bnazanin;" id="s1">انجماد، سرمایش و گرمایش <br>
                                         <strong>غذای</strong>
                                         <strong>تازه</strong>
                                     </p>
                                 </div>
                                 <div class="row h-25" style="display: flex; text-align: start; justify-content: center;">
-                                    <p>ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
+                                    <p id="s12">ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
                                     و گرم کردن<br> مواد غذایی با کیفیت. <br> <br><br>بیشتربخوانید
                                     </p>
                                 </div>
@@ -84,13 +88,13 @@
                         <div class="row h-100">
                             <div class="col-12">
                                 <div class="row" style="display: flex; text-align: start; justify-content: center; height: 180px; margin-top: 50px;">
-                                    <p style="font-size: 50px;">انجماد، سرمایش و گرمایش <br>
+                                    <p style="font-size: 50px;" id="st1">انجماد، سرمایش و گرمایش <br>
                                         <strong>غذای</strong>
                                         <strong>تازه</strong>
                                     </p>
                                 </div>
                                 <div class="row h-25" style="display: flex; text-align: start; justify-content: center;">
-                                    <p>ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
+                                    <p id="st12">ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
                                     و گرم کردن<br> مواد غذایی با کیفیت. <br><br>بیشتربخوانید
                                     </p>
                                 </div>
@@ -103,13 +107,13 @@
                         <div class="row h-100">
                             <div class="col-12">
                                 <div class="row" style="display: flex; text-align: start; justify-content: center; height: 180px; margin-top: 10px; margin-right: 10px;">
-                                    <p style="font-size: 40px;">انجماد، سرمایش و گرمایش <br>
+                                    <p style="font-size: 40px;" id="sm1">انجماد، سرمایش و گرمایش <br>
                                         <strong>غذای</strong>
                                         <strong>تازه</strong>
                                     </p>
                                 </div>
                                 <div class="row h-25" style="display: flex; text-align: start; justify-content: center; margin-top: 15px; margin-right: 10px;">
-                                    <p>ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
+                                    <p id="sm12">ما VALERIA هستیم. ما به صنعت غذای جهانی طیف کاملی از فناوری‌های مکانیکی <br>، برودتی را از یک شرکت ارائه می‌کنیم - از انجماد تا سرد کردن 
                                     و گرم کردن<br> مواد غذایی با کیفیت. <br><br>بیشتربخوانید
                                     </p>
                                 </div>
@@ -121,37 +125,16 @@
                     <div class="col-12 d-none d-lg-block" style="height: 140vh;">
                         <div class="row h-100">
                             <div class="col-12" style="height: 60vh; background-color: rgb(0, 59, 94); text-align: start; text-align: start;">
-                                <div class="row h-50"><h3 style="margin-top: 200px; margin-right: 300px; color: whitesmoke;">راه حل</h3></div>
+                                <div class="row h-50"><h3 id="s2" style="margin-top: 200px; margin-right: 300px; color: whitesmoke; font-family: bnazanin;">راه حل</h3></div>
                                 <div class="row h-50">
-                                    <p style="margin-right: 300px;"><h2 style="color: whitesmoke;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم<br>که به نفع محیط زیست و <br>بودجه شماست</h2></p>
+                                    <p>
+                                        <h2 id="s22" style="color: whitesmoke; margin-right: 300px; font-family: bnazanin;">ما راه حل های  <strong style="font-family: bnazanin;">پایداری</strong> ارائه می دهیم<br>که به نفع محیط زیست و <br>بودجه شماست</h2>
+                                    </p>
                                 </div>
                             </div>
                             <div class="col-12" style="height: 80vh;">
-                                <div class="row h-75">
-                                    <div uk-slider >
-
-                                        <div class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-4@m uk-light" style="height: 496px;">
-                                            <div class="uk-transition-toggle" tabindex="0">
-                                                <img src="Images/cryo-spiral.webp" alt="" style="height: 494px; width: 100%;">
-                                                <div class="uk-position-center uk-panel" style="display: flex;"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">IQF Mechanical</h1></a></li></ul></div>
-                                            </div>
-                                            <div class="uk-transition-toggle" tabindex="0">
-                                                <img src="Images/h.webp" alt="" style="height: 494px; width: 100%;">
-                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">Plate Freezing</h1></a></li></ul></div>
-                                            </div>
-                                            <div class="uk-transition-toggle" tabindex="0">
-                                                <img src="Images/spiral-mekanisk.webp" alt="" style="height: 494px; width: 100%;">
-                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">IQF / Cryogenic</h1></a></li></ul></div>
-                                            </div>
-                                            <div class="uk-transition-toggle" tabindex="0">
-                                                <img src="Images/spiral-tunnel-og-plade.webp" alt="" style="height: 494px; width: 100%;">
-                                                <div class="uk-position-center uk-panel"><ul><li style="list-style-type: none;"><a href="" style="text-decoration: none;"><h1 class="uk-transition-slide-bottom-small" style="font-size: 35px;">Combined solutions</h1></a></li></ul></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    
-                                        <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
-                                    
+                                <div class="row h-75" style="text-align: center; align-items: center; justify-content: center;">
+                                    <h3 >Slider</h3>
                                 </div>
                                 <div class="row h-25" style="background-color: rgb(0, 59, 94);"></div>
                             </div>
@@ -162,9 +145,9 @@
                     <div class="col-12 d-none d-md-block d-lg-none" style="height: 140vh;">
                         <div class="row h-100">
                             <div class="col-12" style="height: 60vh; background-color: rgb(0, 59, 94); text-align: start; text-align: start;">
-                                <div class="row h-50"><h3 style="margin-top: 200px; margin-right: 150px; color: whitesmoke;">راه حل</h3></div>
+                                <div class="row h-50"><h3 id="st2" style="margin-top: 200px; margin-right: 150px; color: whitesmoke;">راه حل</h3></div>
                                 <div class="row h-50">
-                                    <p style="margin-right: 150px;"><h2 style="color: whitesmoke;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم<br>که به نفع محیط زیست و <br>بودجه شماست</h2></p>
+                                    <p style="margin-right: 150px;"><h2 id="st22" style="color: whitesmoke;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم<br>که به نفع محیط زیست و <br>بودجه شماست</h2></p>
                                 </div>
                             </div>
                             <div class="col-12" style="height: 80vh;">
@@ -199,9 +182,9 @@
                     <div class="col-12 d-block d-md-none" style="height: 140vh;">
                         <div class="row h-100">
                             <div class="col-12" style="height: 60vh; background-color: rgb(0, 59, 94); text-align: start; text-align: start;">
-                                <div class="row h-50"><h3 style="margin-top: 230px; margin-right: 30px; color: whitesmoke;">راه حل</h3></div>
+                                <div class="row h-50"><h3 id="sm2" style="margin-top: 230px; margin-right: 30px; color: whitesmoke;">راه حل</h3></div>
                                 <div class="row h-50">
-                                    <p><h2 style="color: whitesmoke; margin-right: 30px;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم که به نفع محیط زیست <br>و بودجه شماست</h2></p>
+                                    <p><h2 id="sm22" style="color: whitesmoke; margin-right: 30px;">ما راه حل های  <strong>پایداری</strong> ارائه می دهیم که به نفع محیط زیست <br>و بودجه شماست</h2></p>
                                 </div>
                             </div>
                             <div class="col-12" style="height: 80vh;">
@@ -220,10 +203,10 @@
                                 <div class="row h-50">
                                     <div class="col-12">
                                         <div class="row h-50" style="display: flex; justify-content: center;  background-color: rgb(217, 217, 214);">
-                                            <h3 style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h3>
+                                            <h3 id="s3" style="margin-top: 120px; display: flex; color: rgb(114, 117, 99); font-family: bnazanin;">خبرنامه</h3>
                                         </div>
                                         <div class="row h-50" style="display: flex; justify-content: center; text-align: center;  background-color: rgb(217, 217, 214);">
-                                            <p style="font-size: 30px; color: rgb(114, 117, 99); margin-top: 40px;"><strong>عضو</strong> خبرنامه ما مشترک شوید و <strong>آخرین</strong><br> <strong>اخبار</strong> را دریافت کنید</p>
+                                            <p id="s32" style="font-size: 30px; color: rgb(114, 117, 99); margin-top: 40px;"><strong>عضو</strong> خبرنامه ما مشترک شوید و <strong>آخرین</strong><br> <strong>اخبار</strong> را دریافت کنید</p>
                                         </div>
                                     </div>
                                 </div>
@@ -233,14 +216,14 @@
                                             <div class="col-6"  style=" background-color: rgb(217, 217, 214);">
                                                 <div class="row h-100" style="display: flex; align-items: center;">
                                                     <div class="col-12" style="margin-left: 160px;">
-                                                        <input type="text" class="form-control" placeholder="نام" aria-label="نام" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px; text-align: end;">
+                                                        <input id="s33" type="text" class="form-control" placeholder="نام" aria-label="نام" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px; text-align: end; font-family: bnazanin;">
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-6" style=" background-color: rgb(217, 217, 214);">
                                                 <div class="row h-100" style="display: flex; align-items: center;">
                                                     <div class="col-12">
-                                                        <input type="text" class="form-control" placeholder="ایمیل" aria-label="ایمیل" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px; text-align: end;">
+                                                        <input id="s34" type="text" class="form-control" placeholder="ایمیل" aria-label="ایمیل" style="height: 50px; width: 80%; background-color: rgb(217, 217, 214); border: none; border-bottom: 1px solid black; border-radius: 0px; text-align: end; font-family: bnazanin;">
                                                     </div>
                                                 </div>
                                             </div>
@@ -248,13 +231,13 @@
                                         <div class="row h-25" style=" background-color: rgb(217, 217, 214);">
                                             <div class="form-check" style="display: flex; text-align: center; align-items: center; margin: 0 auto;">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                                                <label class="form-check-label" for="flexCheckIndeterminate" style=" margin-right: 20px;">
+                                                <label id="s35" class="form-check-label" for="flexCheckIndeterminate" style=" margin-right: 20px; font-family: bnazanin;">
                                                     بله، من مایلم از VALERIA خبرنامه دریافت کنم. سیاست حفظ حریم خصوصی ما را بخوانید
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="row h-25" style="display: flex; align-items: center; justify-content: center; background-color: rgb(217, 217, 214);">
-                                            <button type="button" class="btn" style="height: 60px; width: 180px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px;"><strong>دنبال کردن</strong></button>
+                                            <button id="s36" type="button" class="btn" style="height: 60px; width: 180px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px;"><strong style="font-family: bnazanin;">دنبال کردن</strong></button>
                                         </div>
                                     </div>
                                 </div>
@@ -269,10 +252,10 @@
                                 <div class="row h-50">
                                     <div class="col-12">
                                         <div class="row h-50" style="display: flex; justify-content: center;  background-color: rgb(217, 217, 214);">
-                                            <h3 style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h3>
+                                            <h3 id="st3" style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h3>
                                         </div>
                                         <div class="row h-50" style="display: flex; justify-content: center; text-align: center;  background-color: rgb(217, 217, 214);">
-                                            <p style="font-size: 30px; color: rgb(114, 117, 99); margin-top: 10px;"><strong>عضو</strong> خبرنامه ما مشترک شوید و <strong>آخرین</strong><br> <strong>اخبار</strong> را دریافت کنید</p>
+                                            <p id="st33" style="font-size: 30px; color: rgb(114, 117, 99); margin-top: 10px;"><strong>عضو</strong> خبرنامه ما مشترک شوید و <strong>آخرین</strong><br> <strong>اخبار</strong> را دریافت کنید</p>
                                         </div>
                                     </div>
                                 </div>
@@ -297,13 +280,13 @@
                                         <div class="row h-25" style=" background-color: rgb(217, 217, 214);">
                                             <div class="form-check" style="display: flex; text-align: center; align-items: center; margin: 0 auto;">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                                                <label class="form-check-label" for="flexCheckIndeterminate" style="margin-right: 20px;">
+                                                <label id="st34" class="form-check-label" for="flexCheckIndeterminate" style="margin-right: 20px;">
                                                     بله، من مایلم از VALERIA خبرنامه دریافت کنم. سیاست حفظ حریم خصوصی ما را بخوانید
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="row h-25" style="display: flex; align-items: center; justify-content: center; background-color: rgb(217, 217, 214);">
-                                            <button type="button" class="btn" style="height: 60px; width: 180px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px;"><strong>دنبال کردن</strong></button>
+                                            <button id="st35" type="button" class="btn" style="height: 60px; width: 180px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px;"><strong>دنبال کردن</strong></button>
                                         </div>
                                     </div>
                                 </div>
@@ -318,10 +301,10 @@
                                 <div class="row h-50">
                                     <div class="col-12">
                                         <div class="row h-50" style="display: flex; justify-content: center;  background-color: rgb(217, 217, 214);">
-                                            <h4 style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h4>
+                                            <h4 id="sm3" style="margin-top: 120px; display: flex; color: rgb(114, 117, 99);">خبرنامه</h4>
                                         </div>
                                         <div class="row h-50" style="display: flex; justify-content: center; text-align: center;  background-color: rgb(217, 217, 214);">
-                                            <p style="font-size: 25px; color: rgb(114, 117, 99); margin-top: 20px;"><strong>عضو</strong> خبرنامه ما شوید و از <strong>آخرین</strong><br> <strong>اخبار</strong> ما با خبر شوید</p>
+                                            <p id="sm32" style="font-size: 25px; color: rgb(114, 117, 99); margin-top: 20px;"><strong>عضو</strong> خبرنامه ما شوید و از <strong>آخرین</strong><br> <strong>اخبار</strong> ما با خبر شوید</p>
                                         </div>
                                     </div>
                                 </div>
@@ -346,13 +329,13 @@
                                         <div class="row h-25" style=" background-color: rgb(217, 217, 214); display: flex; margin: 0 auto; margin-right: 30px;">
                                             <div class="form-check" style=" display: flex; text-align: start; margin-top: 15px;">
                                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
-                                                <label class="form-check-label" for="flexCheckIndeterminate" style="margin-right: 20px; font-size: 10px;">
+                                                <label id="sm33" class="form-check-label" for="flexCheckIndeterminate" style="margin-right: 20px; font-size: 10px;">
                                                     بله، من مایلم از VALERIA خبرنامه دریافت کنم. سیاست حفظ حریم خصوصی ما را بخوانید
                                                 </label>
                                             </div>
                                         </div>
                                         <div class="row h-25" style=" background-color: rgb(217, 217, 214);">
-                                            <button type="button" class="btn" style="height: 50px; width: 160px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px; margin: 0 auto;"><strong>دنبال کردن</strong></button>
+                                            <button id="sm34" type="button" class="btn" style="height: 50px; width: 160px; background-color: rgb(183, 201, 101); color: rgb(77, 102, 81); border-radius: 10px; margin: 0 auto;"><strong>دنبال کردن</strong></button>
                                         </div>
                                     </div>
                                 </div>
@@ -366,9 +349,9 @@
                             <div class="col-5">
                                 <div class="row h-75" style="display: flex; margin-top: 100px;">
                                     <div class="col-12">
-                                        <div class="row h-25"><h4 style="margin-right: 30px; margin-top: 90px; color: rgb(114, 117, 99);">حرفه ما</h4></div>
+                                        <div class="row h-25"><h4 id="s4" style="margin-right: 30px; margin-top: 90px; color: rgb(114, 117, 99);">حرفه ما</h4></div>
                                         <div class="row h-50" style="justify-content: center; text-align: start;">
-                                            <h3 style="margin-right: 30px; color: rgb(114, 117, 99); margin-top: 50px;">
+                                            <h3 id="s42" style="margin-right: 30px; color: rgb(114, 117, 99); margin-top: 50px; font-family: bnazanin;">
                                                 به ما بپیوندید و بخشی از یک شرکت رو به رشد با جاه طلبی ها و مکان های جهانی و مشتریان در سراسر جهان شوید . <br> <br>در VALERIA شما این شانس را دارید که یک حرفه بین المللی را دنبال کنید. همکاری بین فرهنگ ها، زبان ها و مرزها بخشی از تجارت روزانه ما است.
                                             </h3>
                                         </div>
@@ -377,7 +360,7 @@
                                                 <span class="circle" aria-hidden="true">
                                                 <span class="icon arrow"></span>
                                                 </span>
-                                                <span class="button-text">مهارت های خود را کشف کنید</span>
+                                                <span id="s43" class="button-text" style="font-family: bnazanin;">مهارت های خود را کشف کنید</span>
                                               </button>
                                         </div>
                                     </div>
@@ -396,10 +379,10 @@
                                 <div class="row h-50">
                                     <div class="col-12">
                                         <div class="row h-50">
-                                            <h4 style="margin-right: 30px; margin-top: 50px; color: rgb(114, 117, 99);" >حرفه ما</h4>
+                                            <h4 id="sm4" style="margin-right: 30px; margin-top: 50px; color: rgb(114, 117, 99);" >حرفه ما</h4>
                                         </div>
                                         <div class="row h-50" style="text-align: start;">
-                                            <h3 style="margin-right: 30px; color: rgb(114, 117, 99);">در سفر ما به ما <br> بپیوندید</h3>
+                                            <h3 id="sm42" style="margin-right: 30px; color: rgb(114, 117, 99);">در سفر ما به ما <br> بپیوندید</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -411,7 +394,7 @@
                                 <div class="row h-100">
                                     <div class="col-12">
                                         <div class="row h-75" style="justify-content: center; text-align: start;">
-                                            <h4 style="margin-right: 30px; color: rgb(114, 117, 99); margin-left: 30px; margin-top: 30px;">
+                                            <h4 id="sm43" style="margin-right: 30px; color: rgb(114, 117, 99); margin-left: 30px; margin-top: 30px;">
                                                 به ما بپیوندید و بخشی از یک شرکت رو به رشد با جاه طلبی ها و مکان های جهانی و مشتریان در سراسر جهان شوید . <br> <br>در VALERIA شما این شانس را دارید که یک حرفه بین المللی را دنبال کنید. همکاری بین فرهنگ ها، زبان ها و مرزها بخشی از تجارت روزانه ما است.
                                             </h4>
                                         </div>
@@ -420,7 +403,7 @@
                                                 <span class="circle" aria-hidden="true">
                                                 <span class="icon arrow"></span>
                                                 </span>
-                                                <span class="button-text">مهارت های خود را کشف کنید</span>
+                                                <span id="sm44" class="button-text">مهارت های خود را کشف کنید</span>
                                               </button>
                                         </div>
                                     </div>
@@ -436,10 +419,10 @@
                                 <div class="row h-50">
                                     <div class="col-12">
                                         <div class="row h-50">
-                                            <h4 style="margin-right: 30px; margin-top: 50px; color: rgb(114, 117, 99);" >حرفه ما</h4>
+                                            <h4 id="st4" style="margin-right: 30px; margin-top: 50px; color: rgb(114, 117, 99);" >حرفه ما</h4>
                                         </div>
                                         <div class="row h-50" style="text-align: start;">
-                                            <h3 style="margin-right: 30px; color: rgb(114, 117, 99);">در سفر ما به ما <br> بپیوندید</h3>
+                                            <h3 id="st42" style="margin-right: 30px; color: rgb(114, 117, 99);">در سفر ما به ما <br> بپیوندید</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -451,7 +434,7 @@
                                 <div class="row h-100">
                                     <div class="col-12">
                                         <div class="row h-50" style="justify-content: center; text-align: start;">
-                                            <h4 style="margin-right: 30px; color: rgb(114, 117, 99); margin-left: 30px; margin-top: 30px;">
+                                            <h4 id="st43" style="margin-right: 30px; color: rgb(114, 117, 99); margin-left: 30px; margin-top: 30px;">
                                                 به ما بپیوندید و بخشی از یک شرکت رو به رشد با جاه طلبی ها و مکان های جهانی و مشتریان در سراسر جهان شوید . <br> <br>در VALERIA شما این شانس را دارید که یک حرفه بین المللی را دنبال کنید. همکاری بین فرهنگ ها، زبان ها و مرزها بخشی از تجارت روزانه ما است.
                                             </h4>
                                         </div>
@@ -460,7 +443,7 @@
                                                 <span class="circle" aria-hidden="true">
                                                 <span class="icon arrow"></span>
                                                 </span>
-                                                <span class="button-text">مهارت های خود را کشف کنید</span>
+                                                <span id="st44" class="button-text">مهارت های خود را کشف کنید</span>
                                               </button>
                                         </div>
                                     </div>
@@ -598,7 +581,8 @@
         </div> 
         </section>
     </div>
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/script.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/-Fixed-Navbar-start-with-transparency-background-BS4--transparency-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js"></script>
